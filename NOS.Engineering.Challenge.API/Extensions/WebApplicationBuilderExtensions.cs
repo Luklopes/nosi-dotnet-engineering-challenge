@@ -52,9 +52,7 @@ public static class WebApplicationBuilderExtensions
     
     public static WebApplicationBuilder ConfigureWebHost(this WebApplicationBuilder webApplicationBuilder)
     {
-        webApplicationBuilder
-            .WebHost
-            .ConfigureLogging(logging => { logging.ClearProviders(); });
+        webApplicationBuilder.Logging.ClearProviders().AddConsole();
 
         return webApplicationBuilder;
     }

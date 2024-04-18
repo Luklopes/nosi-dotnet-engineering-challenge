@@ -9,4 +9,5 @@ public interface IContentsManager
     Task<Content?> GetContent(Guid id);
     Task<Content?> UpdateContent(Guid id, ContentDto content);
     Task<Guid> DeleteContent(Guid id);
+    //Task UpdateContent(Guid id, Content content);
 }
